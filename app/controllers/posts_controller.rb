@@ -7,6 +7,9 @@ class PostsController < ApplicationController
   end
 
   def new
+    # TODO: Add SPAM controls
+    # TODO: - Update first post to replace title with "SPAM"
+    # TODO: - Iterate through posts and every 5th , replace title with "SPAM"
   end
 
   def edit
