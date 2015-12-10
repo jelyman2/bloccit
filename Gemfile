@@ -27,3 +27,5 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # bootstrap is all the rage
 gem 'bootstrap-sass'
+# for user passwords
+gem 'bcrypt'
