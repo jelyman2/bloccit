@@ -34,7 +34,6 @@ module Bloccit
     config.autoload_paths << Rails.root.join('lib')
     config.generators do |g|
       g.view_specs = false
-      g.helper_specs = false
     end
   end
 end
