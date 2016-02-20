@@ -31,3 +31,4 @@ gem 'turbolinks'
 gem 'bootstrap-sass'
 # for user passwords
 gem 'bcrypt'
+gem 'figaro', '1.0'
