@@ -23,7 +23,15 @@
 
 // #14
 <h2>Posts</h2>
-<%= render @user.posts %>
+<% if user_created_posts? %>
+  <%= render @user.posts %>
+<% else %>
+  <em>No posts to display for this user.</em>
+<% end %>
 
 <h2>Comments</h2>
-<%= render @user.comments %>
+<% if user_created_comments? %>
+    <%= render @user.comments %>
+<% else %>
+    <em>No comments to display for this user.</em>
+<% end %>
