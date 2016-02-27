@@ -1,13 +1,13 @@
 module UsersHelper
   def user_created_posts?(user)
-    user.posts.count.nil?
+    user.posts.any?
   end
 
   def user_created_comments?(user)
-    user.comments.count.nil?
+    user.comments.any?
   end
 
   def user_favorited_posts?(user)
-    user.favorites.count.nil?
+    user.favorites.any?
   end
 end
