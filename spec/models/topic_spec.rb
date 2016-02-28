@@ -36,6 +36,18 @@ RSpec.describe Topic, type: :model do
                                      public: false)
     end
 
+    describe "scope publicly_viewable" do
+      it "returns only publicly viewable topics" do
+        expect(Topic.publicly_viewable).to eq([@public_topic])
+      end
+    end
+
+    describe "scope privately_viewable" do
+      it "returns only privately viewable topics" do
+        expect(Topic.privately_viewable).to eq([@private_topic])
+      end
+    end
+
     describe "visible_to(user)" do
       it "returns all topics if the user is present" do
         user = User.new
