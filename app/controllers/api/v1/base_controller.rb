@@ -24,3 +24,5 @@ class Api::V1::BaseController < ApplicationController
     render json: {error: "Record not found", status: 404}, status: 404
   end
 end
+
+# a comment
