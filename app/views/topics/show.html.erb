@@ -30,7 +30,7 @@
             <%= render @topic.comments %>
           </div>
           <% if current_user %>
-              <%= render 'comments/form', comment: Comment.new, topic: @topic %>
+              <%= render 'comments/form', comment: Comment.new, topic: @topic, locals: { type: :topic } %>
           <% end %>
         </div>
         </div>
